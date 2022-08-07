@@ -1,0 +1,38 @@
+Joga da Forca:
+** Objetivo Completar a palavra antes de ser enforcado. **
+----------------------------------------------------------
+Estrutura do Algoritmo:
+.......................
+. Gerar um número aleátorio que corresponda ao índice (posição) da palavra
+   na lista de palavras (bancoPalavras).
+. Após sortear o número que corresponda a palavra 'secreta', pegar esta
+   palavra e desmembrar suas letras em uma lista.
+. Logo depois iniciamos a função principal do jogo:
+	. Esta função deve ter um 'loop' para a solicitação da digitação 
+      de uma letra e verificação de sua ocorrência na palavra 'secreta'.
+    . Para verificar a ocorrência da 'letra digitada' na palavra será 
+       necessário criar uma função especial:
+        - A função disponível no Python de busca (find), procura e retorna
+           o índice da PRIMEIRA ocorrência de uma 'subString'(ou um 
+           caracter) na palavra, e não por todos os caracteres na palavra, 
+           pois posso ter mais do que uma ocorrência da 'letra' na 'palavra
+            secreta'.
+        - A nossa função especial além de poder pesquisar mais do que uma
+          ocorrência da letra, deve retornar uma lista, contendo os índices
+           (posições) dessas letras na palavra 'secreta'.
+        . Caso exista:
+            . Deve mostrar uma pseudo palavra 'secreta', com a(s) letra(s)
+              preenchida(s) em sua(s) posição(ões).
+            . Deve mostrar também, as demais letras ainda não descobertas, 
+              mascaradas com asterisco.
+                . Para isso, teremos também que criar uma função que trate
+                   de cada descoberta de uma nova letra na palavra 'secreta'.
+        . Caso contrário:
+            . Deve implementar um contador de erros
+            . Deve desenhar, através de uma função especial que implementa 
+               este desenho, a parte do corpo que corresponde ao erro.
+            . Deve enviar a mensagem de que a letra não existe na palavra
+               'secreta'.
+. O jogo finaliza quando o número de erros máximo do enforcamento for
+   alcançado ou quando todas as letras da palavra 'secreta' forem
+   descobertas.
